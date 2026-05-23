@@ -18,7 +18,7 @@ export function SiteFooter({ content }: { content: SiteContent }) {
             <span>
               <span className="block text-lg md:text-xl font-bold text-slate-900">Y2K Computers</span>
               <span className="block text-xs font-semibold uppercase tracking-[0.18em] text-blue-600">
-                Cyber Cafe
+                Cyber Cafe & Gift Gallery
               </span>
             </span>
           </Link>
@@ -66,7 +66,7 @@ export function SiteFooter({ content }: { content: SiteContent }) {
       <div className="mx-auto mt-8 md:mt-12 flex max-w-7xl flex-col justify-center gap-2 md:gap-3 border-t border-blue-200 pt-4 md:pt-6 text-xs md:text-sm text-slate-600 md:flex-row md:justify-between">
         <p className="text-center md:text-left">&copy; 2026 Y2K Computers. All rights reserved.</p>
         <p className="text-center hidden md:block">
-          Premium Cyber Cafe • Fast • Reliable • Professional
+          Premium Cyber Cafe & Gift Gallery • Fast • Reliable • Professional
         </p>
         <p className="text-center md:text-right">
           Developed by{" "}

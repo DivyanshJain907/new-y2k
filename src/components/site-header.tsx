@@ -19,7 +19,7 @@ export function SiteHeader({ content }: { content: SiteContent }) {
               Y2K Computers
             </span>
             <span className="block text-xs font-semibold uppercase tracking-[0.16em] text-blue-600">
-              Cyber Cafe
+              Cyber Cafe & Gift Gallery
             </span>
           </span>
         </Link>

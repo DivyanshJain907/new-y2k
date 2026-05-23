@@ -37,8 +37,8 @@ export type SiteContent = {
 
 export const defaultContent: SiteContent = {
   hero: {
-    eyebrow: "Trusted Cyber Cafe Hub",
-    title: "Your Cyber Cafe",
+    eyebrow: "Trusted Cyber Cafe & Gift Gallery Hub",
+    title: "Your Cyber Cafe & Gift Gallery",
     subtitle:
       "Fast, reliable, and professional services for ticket bookings, printing, documentation, and digital solutions. Experience premium service quality with a modern touch.",
     image:

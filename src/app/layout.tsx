@@ -4,7 +4,7 @@ import { getSiteContent } from "@/lib/content";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 
 export const metadata: Metadata = {
-  title: "Y2K Computers - Cyber Cafe",
+  title: "Y2K Computers - Cyber Cafe & Gift Gallery",
   description:
     "Premium digital services including ticket booking, printing, passport services, and online form filing. Fast, reliable, and professional.",
 };
