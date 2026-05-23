@@ -42,24 +42,24 @@ export default async function Home() {
               {content.hero.subtitle}
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 grid grid-cols-2 gap-3">
               <a
                 href="#contact"
-                className="inline-flex h-13 items-center gap-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-6 font-bold text-white shadow-lg shadow-blue-200 hover:from-blue-500 hover:to-purple-500 hover:-translate-y-0.5"
+                className="inline-flex h-13 items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-6 font-bold text-white shadow-lg shadow-blue-200 hover:from-blue-500 hover:to-purple-500 hover:-translate-y-0.5"
               >
                 <Zap size={19} />
                 {content.hero.primaryCta}
               </a>
               <a
                 href="#services"
-                className="inline-flex h-13 items-center gap-2 rounded-lg border border-blue-300 bg-blue-50 px-6 font-bold text-blue-700 hover:-translate-y-0.5 hover:border-blue-400 hover:bg-blue-100"
+                className="inline-flex h-13 items-center justify-center gap-2 rounded-lg border border-blue-300 bg-blue-50 px-6 font-bold text-blue-700 hover:-translate-y-0.5 hover:border-blue-400 hover:bg-blue-100"
               >
                 {content.hero.secondaryCta}
                 <ArrowRight size={19} />
               </a>
             </div>
 
-            <div className="mt-10 grid max-w-2xl gap-3 sm:grid-cols-3">
+            <div className="mt-10 grid max-w-2xl gap-3 grid-cols-3">
               {content.stats.map((stat) => (
                 <div
                   key={`${stat.value}-${stat.label}`}
