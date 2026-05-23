@@ -1,6 +1,7 @@
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 import { SectionLabel } from "@/components/section-label";
+import { ServiceBookingButton } from "@/components/service-booking-button";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { SmartImage } from "@/components/smart-image";
@@ -46,16 +47,10 @@ export default async function ServicesPage() {
                 <p className="mt-3 leading-7 text-slate-700">
                   {service.description}
                 </p>
-                <a
-                  href="#contact"
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-blue-600 hover:text-blue-700"
-                >
-                  Book Service
-                  <ArrowRight
-                    size={16}
-                    className="transition group-hover:translate-x-1"
-                  />
-                </a>
+                <ServiceBookingButton
+                  serviceName={service.title}
+                  phone={service.phone}
+                />
               </div>
             </article>
           ))}

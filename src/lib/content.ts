@@ -23,7 +23,7 @@ export type SiteContent = {
     message: string;
     image: string;
   };
-  services: Array<{ title: string; description: string; image: string }>;
+  services: Array<{ title: string; description: string; image: string; phone?: string }>;
   gallery: Array<{ title: string; image: string }>;
   testimonials: Array<{ name: string; quote: string }>;
   contact: {
@@ -73,6 +73,7 @@ export const defaultContent: SiteContent = {
         "Quick and easy booking for all trains and buses across India. Get instant confirmations and e-tickets.",
       image:
         "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=900&q=85",
+      phone: "+91 94122 36477",
     },
     {
       title: "Flight Ticket Booking",
@@ -80,6 +81,7 @@ export const defaultContent: SiteContent = {
         "Book domestic and international flights with the best fares. Instant booking and 24/7 support.",
       image:
         "https://images.unsplash.com/photo-1436262174933-eb994ef2d50d?auto=format&fit=crop&w=900&q=85",
+      phone: "+91 94122 36477",
     },
     {
       title: "Printing & Xerox Services",
@@ -87,6 +89,7 @@ export const defaultContent: SiteContent = {
         "Professional printing, photostat, and xerox services with premium quality output. Color and B&W available.",
       image:
         "https://images.unsplash.com/photo-1609034227505-5876f6aa4e90?auto=format&fit=crop&w=900&q=85",
+      phone: "+91 94122 36477",
     },
     {
       title: "Passport Services",
@@ -94,6 +97,7 @@ export const defaultContent: SiteContent = {
         "Complete passport assistance and form filling. Expert guidance through the entire process.",
       image:
         "https://images.unsplash.com/photo-1606426969862-f84ec6e95b95?auto=format&fit=crop&w=900&q=85",
+      phone: "+91 94122 36477",
     },
     {
       title: "Hindi & English Typing",
@@ -101,6 +105,7 @@ export const defaultContent: SiteContent = {
         "Professional typing services in Hindi and English for documents, forms, and digital files.",
       image:
         "https://images.unsplash.com/photo-1547658459-e95f15a1ad53?auto=format&fit=crop&w=900&q=85",
+      phone: "+91 94122 36477",
     },
     {
       title: "Online Form Filing",
@@ -108,6 +113,7 @@ export const defaultContent: SiteContent = {
         "Expert assistance for government and online form submissions with 100% accuracy.",
       image:
         "https://images.unsplash.com/photo-1585776245865-b0a88e51d736?auto=format&fit=crop&w=900&q=85",
+      phone: "+91 94122 36477",
     },
     {
       title: "High Security Number Plates",
@@ -115,6 +121,7 @@ export const defaultContent: SiteContent = {
         "Authorized HSRP number plate generation with hologram and security features.",
       image:
         "https://images.unsplash.com/photo-1609708536965-59acb2e68b80?auto=format&fit=crop&w=900&q=85",
+      phone: "+91 94122 36477",
     },
     {
       title: "Passport Size Photos",
@@ -122,6 +129,7 @@ export const defaultContent: SiteContent = {
         "Quick studio-quality passport photos with instant digital copies.",
       image:
         "https://images.unsplash.com/photo-1516035069371-29ad0ffe8289?auto=format&fit=crop&w=900&q=85",
+      phone: "+91 94122 36477",
     },
   ],
   gallery: [
