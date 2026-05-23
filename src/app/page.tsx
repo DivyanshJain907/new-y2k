@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 
 import { SectionLabel } from "@/components/section-label";
+import { ServiceBookingButton } from "@/components/service-booking-button";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { SmartImage } from "@/components/smart-image";
@@ -151,13 +152,10 @@ export default async function Home() {
                   <p className="mt-3 min-h-16 text-sm leading-6 text-slate-700">
                     {service.description}
                   </p>
-                  <span className="mt-5 inline-flex items-center gap-2 text-xs font-bold text-blue-600 uppercase tracking-wider">
-                    Quick Service
-                    <ArrowRight
-                      size={14}
-                      className="transition group-hover:translate-x-1"
-                    />
-                  </span>
+                  <ServiceBookingButton
+                    serviceName={service.title}
+                    phone={service.phone}
+                  />
                 </div>
               </article>
             ))}
