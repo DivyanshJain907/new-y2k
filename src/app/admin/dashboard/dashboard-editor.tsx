@@ -206,6 +206,29 @@ export function DashboardEditor({
             </div>
           </Panel>
 
+          <Panel title="Owner">
+            <TextInput
+              label="Name"
+              value={content.owner.name}
+              onChange={(value) => updateNested("owner", "name", value)}
+            />
+            <TextInput
+              label="Title"
+              value={content.owner.title}
+              onChange={(value) => updateNested("owner", "title", value)}
+            />
+            <TextArea
+              label="Message"
+              value={content.owner.message}
+              onChange={(value) => updateNested("owner", "message", value)}
+            />
+            <TextInput
+              label="Image URL"
+              value={content.owner.image}
+              onChange={(value) => updateNested("owner", "image", value)}
+            />
+          </Panel>
+
           <Panel title="About">
             <TextInput
               label="Title"
@@ -373,6 +396,7 @@ export function DashboardEditor({
             Live Preview
           </div>
           <PreviewImage title="Hero" src={content.hero.image} />
+          <PreviewImage title="Owner" src={content.owner.image} />
           <PreviewImage title="About" src={content.about.image} />
           {content.gallery.slice(0, 2).map((item, index) => (
             <PreviewImage key={index} title={item.title} src={item.image} />
